@@ -1,5 +1,5 @@
 # serverless-unit-test-boilerplate
-This repository is created to help beginners understand the basic, fast and easy way to cover almost 100% of unit test coverage using the serverless framework. The code demonstrates how to send either SMS or Email Notification using Axios and Jest.
+This repository is created to help beginners understand the fast and easy way to score almost 100% of unit test coverage using the serverless framework. The code demonstrates how to send either SMS or Email Notification using Axios to call the service provider and Jest for testing.
 
 ## 🧱 System Architecture
 ![System Architecture](graphics/system-architecture-graphic.png)
@@ -12,8 +12,10 @@ In order to maximize the coverage of unit testing and prevent messy test files, 
 
 ## 👣 Steps to take
 1. Clone and try the boilerplate to fully understand the steps in unit testing the handler layer. Make sure that you have a good understanding in serverless and jest library so it would be more easier to follow the instructions.
-2. Create an **event generator** file wherein it mocks the https request in order to call your handlers properly.
-3. Put your payload to the **event generator** and call the handler directly from the test file.
+2. Implement it to your own project by create an event generator file first which represents an https request when calling your handlers.
+3. Create a payload file (Not included in the reposotory yet!) containing all your service needs.
+4. Create test files and follow the index test file given here, add your event generator and payload for each test case.
+5. Combine event generator and sample payloads / fixtures & call the handler file.
 
 ### 🤝 Dealing with 3rd Party APIs
 To prevent slow, delayed and possible runtime error in your CI/CD pipeline, make sure to mock every possible 3rd Part API call responses for each test cases based on the expected result you want to have.

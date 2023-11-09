@@ -1,0 +1,23 @@
+service: serverless-unit-test-boilerplate
+frameworkVersion: '3'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  sendSMSNotification:
+    handler: handler.sendSMSNotification
+    events:
+      - httpApi:
+          path: /notification/sms
+          method: post
+  sendEmailNotification:
+    handler: handler.sendEmailNotification
+    events:
+      - httpApi:
+          path: /notification/email
+          method: post

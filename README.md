@@ -1,6 +1,8 @@
 # serverless-unit-test-boilerplate
 This repository is created to help beginners understand the fast and easy way to score almost 100% of unit test coverage using the serverless framework. The code demonstrates how to send either SMS or Email Notification using Axios to call the service provider and Jest for testing.
 
+This will also help you prevent pipeline execution errors due to unavailable dependencies within its environment such as, cloud resources, API calls and database connectivity.
+
 ## 🧱 System Architecture
 ![System Architecture](graphics/system-architecture-graphic.png)
 
@@ -8,7 +10,7 @@ This repository is created to help beginners understand the fast and easy way to
 ![Test Coverage Result](graphics/test-coverage-graphic.png)
 
 ## 💡 General Idea
-In order to maximize the coverage of unit testing and prevent messy test files, simply **target only the handler files** by mocking a serverless event. From there you will be able to set a simple blueprint of unit testing and it would be easier to create more test cases such as middleware handling, error catching and lots of elements in the service (deeper) layer of your services as you progress the coverage.
+To ensure comprehensive unit test coverage while maintaining organized test files, focus exclusively on the handler files. By simulating a serverless event through mocking, you can establish a straightforward framework for unit testing. This approach facilitates the creation of additional test cases, encompassing middleware handling, error capture, and various aspects within the deeper service layers as you expand your coverage.
 
 ## 👣 Steps to take
 1. Clone and try the boilerplate to fully understand the steps in unit testing the handler layer. Make sure that you have a good understanding in serverless and jest library so it would be more easier to follow the instructions.

@@ -12,6 +12,8 @@ This will also help you prevent pipeline execution errors due to unavailable dep
 ## 💡 General Idea
 To ensure comprehensive unit test coverage while maintaining organized test files, focus exclusively on the handler files. By simulating a serverless event through mocking, you can establish a straightforward framework for unit testing. This approach facilitates the creation of additional test cases, encompassing middleware handling, error capture, and various aspects within the deeper service layers as you expand your coverage.
 
+![System Architecture](graphics/test-cases-graphic.png)
+
 ## 👣 Steps to take
 1. Clone and try the boilerplate to fully understand the steps in unit testing the handler layer. Make sure that you have a good understanding in serverless and jest library so it would be more easier to follow the instructions.
 2. Implement it to your own project by create an event generator file first which represents an https request when calling your handlers.
